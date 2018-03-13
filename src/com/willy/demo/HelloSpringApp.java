@@ -20,6 +20,12 @@ public class HelloSpringApp {
 		System.out.println(coach.getName());
 		System.out.println(coach.getDescription());
 		
+		// Create Two Beans
+		Coach firstCoach = context.getBean("coach", BaseballCoach.class);
+		Coach secondCoach = context.getBean("coach", BaseballCoach.class);
+		
+		System.out.println("Are two coaches same? " + (firstCoach == secondCoach));
+		
 		// Close Container
 		context.close();
 

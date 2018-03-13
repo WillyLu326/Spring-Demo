@@ -13,7 +13,8 @@
 	
 
    	<bean id="coach"
-   		class="com.willy.demo.BaseballCoach">
+   		class="com.willy.demo.BaseballCoach"
+   		scope="prototype">
    		<!-- Constructor Injection -->
    		<constructor-arg index="0" value="willylu"></constructor-arg>
    		<constructor-arg index="1" value="${foo.description}"></constructor-arg>
