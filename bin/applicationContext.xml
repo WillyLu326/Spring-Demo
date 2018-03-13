@@ -14,6 +14,9 @@
 
    	<bean id="coach"
    		class="com.willy.demo.BaseballCoach">
+   		<!-- Constructor Injection -->
+   		<constructor-arg index="0" value="willylu"></constructor-arg>
+   		<constructor-arg index="1" value="${foo.description}"></constructor-arg>
    		
    		<!-- Setter Injection -->
    		<property name="email" value="${foo.email}"></property>

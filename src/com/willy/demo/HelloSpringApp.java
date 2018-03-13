@@ -17,6 +17,8 @@ public class HelloSpringApp {
 		System.out.println(coach.getWorkon());
 		System.out.println(coach.getEmail());
 		System.out.println(coach.getTeam());
+		System.out.println(coach.getName());
+		System.out.println(coach.getDescription());
 		
 		// Close Container
 		context.close();
