@@ -11,10 +11,12 @@ public class HelloSpringApp {
 				new ClassPathXmlApplicationContext("applicationContext.xml");
 		
 		// Get the Bean
-		Coach coach = context.getBean("coach", Coach.class);
+		BaseballCoach coach = context.getBean("coach", BaseballCoach.class);
 		
 		// Run Bean Method
 		System.out.println(coach.getWorkon());
+		System.out.println(coach.getEmail());
+		System.out.println(coach.getTeam());
 		
 		// Close Container
 		context.close();
