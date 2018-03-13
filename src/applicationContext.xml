@@ -14,7 +14,7 @@
 
    	<bean id="coach"
    		class="com.willy.demo.BaseballCoach">
-   		<property name="email" value="email...."></property>
+   		<property name="email" value="${foo.email}"></property>
    		<property name="team" value="team...."></property>
    	</bean>
    
