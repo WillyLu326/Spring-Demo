@@ -2,7 +2,6 @@ package com.annotation.demo;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import com.willy.demo.Coach;
 
 public class HelloAnnotation {
 	public static void main(String[] args) {
@@ -12,10 +11,11 @@ public class HelloAnnotation {
 				new ClassPathXmlApplicationContext("applicationAnnotationContext.xml");
 		
 		// Retrieve the bean
-		Coach coach = context.getBean("tennisCoach", Coach.class);
+		Coach2 coach = context.getBean("tennisCoach", Coach2.class);
 		
 		// Use bean object
 		System.out.println(coach.getWorkon());
+		System.out.println(coach.getGreeting());
 		
 		// Close Container
 		context.close();
