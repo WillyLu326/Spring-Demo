@@ -17,6 +17,11 @@ public class HelloAnnotation {
 		System.out.println(coach.getWorkon());
 		System.out.println(coach.getGreeting());
 		
+		Coach2 firstCoach = context.getBean("tennisCoach", Coach2.class);
+		Coach2 secondCoach = context.getBean("tennisCoach", Coach2.class);
+		
+		System.out.println("Are two objects same? " + (firstCoach == secondCoach));
+		
 		// Close Container
 		context.close();
 		
