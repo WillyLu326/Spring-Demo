@@ -7,12 +7,13 @@ import org.springframework.stereotype.Component;
 @Component
 public class TennisCoach implements Coach2 {
 
+	@Autowired
 	private HappyGreetingService happyGreetingService;
 	
-	@Autowired
-	public TennisCoach(HappyGreetingService happyGreetingService) {
-		this.happyGreetingService = happyGreetingService;
-	}
+//	@Autowired
+//	public TennisCoach(HappyGreetingService happyGreetingService) {
+//		this.happyGreetingService = happyGreetingService;
+//	}
 	
 	@Override
 	public String getWorkon() {
