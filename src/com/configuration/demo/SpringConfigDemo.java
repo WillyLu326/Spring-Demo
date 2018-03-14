@@ -10,7 +10,7 @@ public class SpringConfigDemo {
 		AnnotationConfigApplicationContext context = 
 				new AnnotationConfigApplicationContext(SportConfig.class);
 		
-		// Reterive the Bean
+		// Retrieve the Bean
 
 	}
 
