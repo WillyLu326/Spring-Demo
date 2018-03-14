@@ -11,17 +11,19 @@
 	<!-- Load properties file: sport.properties -->
 	<context:property-placeholder location="classpath:sport.properties"/>
 	
+	
 
-   	<bean id="coach"
+	<!-- For XML Setup -->
+   	<!-- <bean id="coach"
    		class="com.willy.demo.BaseballCoach"
    		scope="prototype">
-   		<!-- Constructor Injection -->
+   		Constructor Injection
    		<constructor-arg index="0" value="willylu"></constructor-arg>
    		<constructor-arg index="1" value="${foo.description}"></constructor-arg>
    		
-   		<!-- Setter Injection -->
+   		Setter Injection
    		<property name="email" value="${foo.email}"></property>
    		<property name="team" value="team...."></property>
-   	</bean>
+   	</bean> -->
    
 </beans>
