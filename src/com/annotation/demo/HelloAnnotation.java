@@ -2,6 +2,8 @@ package com.annotation.demo;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import com.configuration.demo.SwinCoach;
+
 
 public class HelloAnnotation {
 	public static void main(String[] args) {

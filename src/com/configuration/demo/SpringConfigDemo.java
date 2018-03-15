@@ -16,6 +16,10 @@ public class SpringConfigDemo {
 		// Run the Method
 		System.out.println(pingpangCoach.getWorkon());
 		
+		SwinCoach swimCoach = context.getBean("swinCoach", SwinCoach.class);
+		System.out.println(swimCoach.getName());
+		System.out.println(swimCoach.getTeam());
+		
 		
 		// Close Container
 		context.close();
