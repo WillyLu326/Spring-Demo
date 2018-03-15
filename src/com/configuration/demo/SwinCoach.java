@@ -6,10 +6,10 @@ import org.springframework.stereotype.Component;
 @Component
 public class SwinCoach implements Coach3 {
 
-	@Value("willyl,,...")
+	@Value("willylu")
 	private String name;
 	
-	@Value("email")
+	@Value("${foo.email}")
 	private String team;
 	
 	public String getName() {
